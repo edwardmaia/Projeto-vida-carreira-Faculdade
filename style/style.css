@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+html {
+    height: 100%;
+}
+body { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; 
+}
+.header {
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/banner\ 4.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+   display: flex;
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center; 
+}
+nav img {
+    width: 130px;
+
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: 13px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #36f4f4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 50px;
+    line-height: 68px;
+    font-weight: 700;
+}
+.text-box p {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+}
+.btn-clickable-box {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn-clickable-box:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+/*------ our goals ----*/
+
+.our-goals {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.our-goals h1 {
+    font-size: 45px;
+    line-height: 56px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+.our-goals p {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #272525;
+    padding: 10px;
+    text-align: justify;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-goals-col {
+    flex-basis: 31%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;  
+}
+.our-goals-col h3 {
+    text-align: center;
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #000000;
+}
+.our-goals-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*------ Community ----*/
+
+.community {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.community h1 {
+    font-size: 45px;
+    line-height: 56px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+.community p {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #272525;
+    padding: 40px;
+    text-align: center;
+}
+.community-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+.community-col img {
+    width: 100%;
+    border-radius: 10px;
+    min-height: 400px;
+
+}
+.community-col p {
+    padding: 0;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #272525;
+    text-align: justify;
+}
+.community-col h4 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/*----- Help our cause -----*/
+
+.help-our-cause {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.help-our-cause h1 {
+    font-size: 45px;
+    line-height: 56px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+.help-our-cause p {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #272525;
+    padding: 40px;
+    text-align: center;
+}
+.help-our-cause-col {
+    flex-basis: 31%;
+    background: #DADBF1;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    min-height: 200px;
+}
+.help-our-cause-col h4 {
+    text-align: center;
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #000000;
+}
+.help-our-cause-col p {
+    padding: 0;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #272525;
+    text-align: justify;
+}
+
+/*----- footer -----*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: auto; 
+    text-align: center;
+    padding: 15px;
+}
+/*----- Inscrições -----*/ 
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/banner\ 4.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff; 
+}
+.sub-header h1 {
+    font-size: 50px;
+    line-height: 68px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+.sub-header p {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+}
+.inscricoes-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.event-container {
+    background-color: #fff !important;
+    border: 1px solid #e53935 !important;
+    padding: 10px !important;
+    text-align: center;
+    margin: 100px; 
+}
+.registration-button {
+    text-align: center;
+    background-color: #4caf50 !important; 
+    color: #fff !important;
+    padding: 15px 20px !important;
+    font-size: 16px !important;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto !important; 
+    width: 60%;
+}
+.registration-button2 {
+    text-align: center;
+    background-color: #892300 !important; 
+    color: #fff !important;
+    padding: 15px 20px !important;
+    font-size: 16px !important;
+    border: none;
+    display: block;
+    margin: 10px auto !important; 
+    width: 60%;
+}
+.registration-button3 {
+    text-align: center;
+    background-color: #818181 !important; 
+    color: #fff !important;
+    padding: 15px 20px !important;
+    font-size: 16px !important;
+    border: none;
+    display: block;
+    margin: 10px auto !important; 
+    width: 60%;
+}
+
+/*----- Community -----*/ 
+
+.community-content {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.community-content-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.community-content-col2 {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.community-content-col h3 {
+    padding-top: 0;
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #000000;
+    text-align: justify;
+}
+.community-content-col p {
+    padding: 15px 0 25px;
+    text-align: justify;
+}
+.community-content-col2 h3 {
+    padding-top: 0;
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #000000;
+    text-align: justify;
+}
+.community-content-col2 p {
+    padding: 15px 0 25px;
+    text-align: justify;
+}
+.red-btn {
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+
+}
+.red-btn:hover {
+    color: #fff;
+}
+
+/*----- Veja mais -----*/ 
+.veja-mais {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.veja-mais-event-container {
+    background-color: #fff !important;
+    border: 1px solid #000000 !important;
+    padding: 20px !important;
+    text-align: justify;
+    margin: 100px; 
+}
+.veja-mais-event-container h2 {
+    font-size: 35px;
+    line-height: 68px;
+    font-weight: 700;
+    padding: 15px !important;
+}
+.veja-mais-event-container p {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    padding: 10px;
+}
